@@ -18,7 +18,8 @@ inspect-prod-container:
 # The difference from "run" is that hot reloading is enabled
 .PHONY: run-dev
 run-dev:
-	uvicorn app.main:app --reload --host "0.0.0.0" --port "8080"
+	#add commands to be trigger development enviroment run, below an example
+	# uvicorn app.main:app --reload --host "0.0.0.0" --port "8080"
 
 .PHONY: compile-requirements
 compile-requirements:
