@@ -1,0 +1,17 @@
+{
+	"name": "Python",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": "..",
+	},
+	"mounts": [
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.aws,target=/root/.aws,type=bind,consistency=cached,readonly"
+	],
+	"extensions": [
+		"ms-python.python"
+	],
+	"forwardPorts": [
+		8080
+	],
+	"postCreateCommand": "pip install pip-tools && pip-sync requirements.txt requirements-dev.txt",
+}
