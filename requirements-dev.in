@@ -15,5 +15,8 @@ flake8-variables-names
 pep8-naming
 # static analysis
 mypy
+# testing
+pytest
 # extra
+pandas-stubs
 sqlalchemy-stubs

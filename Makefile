@@ -1,25 +1,12 @@
 #
-# To be run from the production host
-#
 
 .PHONY: run
 run:
-	docker-compose up --build
+	python -m app.main
 
-.PHONY: inspect-prod-container
-inspect-prod-container:
-	docker-compose build
-	docker-compose run papi bash
-
-#
-# To be run inside the devcontainer
-#
-
-# The difference from "run" is that hot reloading is enabled
-.PHONY: run-dev
-run-dev:
-	#add commands to be trigger development enviroment run, below an example
-	# uvicorn app.main:app --reload --host "0.0.0.0" --port "8080"
+.PHONY: test
+test:
+	python -m app.test
 
 .PHONY: compile-requirements
 compile-requirements:

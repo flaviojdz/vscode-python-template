@@ -5,7 +5,9 @@
 #    pip-compile requirements-dev.in
 #
 attrs==20.3.0
-    # via flake8-eradicate
+    # via
+    #   flake8-eradicate
+    #   pytest
 bandit==1.6.3
     # via flake8-bandit
 eradicate==2.0.0
@@ -47,6 +49,8 @@ gitdb==4.0.5
     # via gitpython
 gitpython==3.1.11
     # via bandit
+iniconfig==1.1.1
+    # via pytest
 mccabe==0.6.1
     # via flake8
 mypy-extensions==0.4.3
@@ -55,10 +59,18 @@ mypy==0.790
     # via
     #   -r requirements-dev.in
     #   sqlalchemy-stubs
+packaging==20.9
+    # via pytest
+pandas-stubs==1.1.0.2
+    # via -r requirements-dev.in
 pbr==5.5.1
     # via stevedore
 pep8-naming==0.11.1
     # via -r requirements-dev.in
+pluggy==0.13.1
+    # via pytest
+py==1.10.0
+    # via pytest
 pycodestyle==2.6.0
     # via
     #   flake8
@@ -67,6 +79,10 @@ pycodestyle==2.6.0
     #   flake8-print
 pyflakes==2.2.0
     # via flake8
+pyparsing==2.4.7
+    # via packaging
+pytest==6.2.3
+    # via -r requirements-dev.in
 pyyaml==5.3.1
     # via bandit
 six==1.15.0
@@ -80,6 +96,8 @@ sqlalchemy-stubs==0.3
     # via -r requirements-dev.in
 stevedore==3.3.0
     # via bandit
+toml==0.10.2
+    # via pytest
 typed-ast==1.4.1
     # via mypy
 typing-extensions==3.7.4.3
