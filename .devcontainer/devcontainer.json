@@ -4,9 +4,6 @@
 		"dockerfile": "Dockerfile",
 		"context": "..",
 	},
-	"mounts": [
-		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.aws,target=/root/.aws,type=bind,consistency=cached,readonly"
-	],
 	"extensions": [
 		"ms-python.python"
 	],
