@@ -22,3 +22,13 @@ sync-requirements:
 upgrade-requirements:
 	pip-compile --upgrade requirements.in
 	pip-compile --upgrade requirements-dev.in
+
+.PHONY: requirements
+requirements:
+	make upgrade-requirements
+	make sync-requirements
+
+.PHONY: r
+r:
+	make upgrade-requirements
+	make sync-requirements
