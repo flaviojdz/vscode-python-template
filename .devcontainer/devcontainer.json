@@ -2,13 +2,11 @@
 	"name": "Python",
 	"build": {
 		"dockerfile": "Dockerfile",
-		"context": "..",
+		"context": ".."
 	},
 	"extensions": [
-		"ms-python.python"
+		"ms-python.python",
+		"ms-toolsai.jupyter"
 	],
-	"forwardPorts": [
-		8080
-	],
-	"postCreateCommand": "pip install pip-tools && pip-sync requirements.txt requirements-dev.txt",
+	"postCreateCommand": "pip install pip-tools && pip-sync requirements.txt requirements-dev.txt"
 }
