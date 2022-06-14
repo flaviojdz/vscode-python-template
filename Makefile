@@ -2,11 +2,11 @@
 
 .PHONY: run
 run:
-	python -m app.main
+	python -m main
 
 .PHONY: test
 test:
-	python -m app.test
+	python -m test
 
 .PHONY: compile-requirements
 compile-requirements:
