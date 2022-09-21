@@ -17,3 +17,7 @@ make run - will run main.py
 make r - will upgrade requirements in requirements.in and requriements-dev.in to create requirements.txt and requirements dev.txt
 
 make test - will run test.py
+
+## secrets
+
+all files in secrets folder are ignored for git upload commands.
